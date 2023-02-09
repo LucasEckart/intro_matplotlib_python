@@ -54,4 +54,35 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    fig.suptitle("Múltiples gráficos", fontsize = 18)
+    ax1 = fig.add_subplot(2, 2, 1)
+    ax2 = fig.add_subplot(2, 2, 2)
+    ax3 = fig.add_subplot(2, 2, 3)
+    ax4 = fig.add_subplot(2, 2, 4)
+   
+
+    ax1.plot (x, y1, color ="darkred", marker = "*", label = "x^2")
+    ax1.set_facecolor("whitesmoke")
+    ax1.set_title("Gráfico 1")
+    ax1.legend()
+
+    ax2.plot (x, y2, color = "darkblue", marker = "^", label ="x^3" )
+    ax2.set_facecolor("whitesmoke")
+    ax2.set_title("Gráfico 2")
+    ax2.legend()
+
+    ax3.plot (x, y3, color = "orange", marker = ".", label ="x^4" )
+    ax3.set_facecolor("whitesmoke")
+    ax3.set_title("Gráfico 3")
+    ax3.legend()
+
+    ax4.plot (x, y4, color = "green", marker = "1", label ="√x" )
+    ax4.set_facecolor("whitesmoke")
+    ax4.set_title("Gráfico 4")
+    ax4.legend()
+
+
+    plt.show()
+
     print("terminamos")

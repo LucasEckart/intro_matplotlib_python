@@ -35,4 +35,15 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    ax = fig.add_subplot()     
+
+    ax.plot (x, y, color ="darkred", marker = "*", label = "y=x^2")
+    ax.set_facecolor("whitesmoke")
+    ax.set_title("Funcion cuadrática")
+    ax.set_xlabel("Eje X")
+    ax.set_ylabel("Eje y")
+    ax.legend()
+    plt.show()
+
     print("terminamos")

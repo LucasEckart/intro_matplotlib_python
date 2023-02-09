@@ -34,4 +34,14 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    ax = fig.add_subplot()
+
+    ax.scatter(x, y, color = "black", label = "Hiperbóica", marker="*")
+    ax.set_title("Tangente")
+    ax.set_facecolor("whitesmoke")
+    ax.legend()
+
+    plt.show()
+
     print("terminamos")
